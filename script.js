@@ -1,9 +1,9 @@
 function rollDices(){
     let numberOfDices = document.getElementById("inputNumberOfDices").value;
     let text = document.getElementById("Text");
-    if( numberOfDices > 4 || isNaN(parseInt(numberOfDices))){
+    if( numberOfDices > 4 || isNaN(parseInt(numberOfDices))){//if value is greater then 4 or it is not a number
         text.style = "color: red;";
-        text.innerText = "Invalid value!";
+        text.innerText = "Invalid value!";//we tell the user about it and do nothing
     }
     else{
         text.style = "color: black;";
